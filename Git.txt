@@ -1,0 +1,5 @@
+1. git log  获取提交id
+
+2. git reset --hard id
+
+3. git reflog

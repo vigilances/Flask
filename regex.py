@@ -31,7 +31,10 @@ import re
 
 
 def run():
-    result = re.match("a\D", "abc")
+    # d数字 s空白字符 w单词字符（含数字）
+    # *匹配前一个字符0次或无限次 +匹配前一个字符1次或无限次 ？匹配前一个字符0次或1次 {m}匹配前一个字符m次
+    # result = re.match("a\D", "abc")
+    result = re.match("a{3}\d{3}\w{4}", "aaa123bddccc")
     print(result.group())
 
 

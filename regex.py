@@ -38,5 +38,14 @@ def run():
     print(result.group())
 
 
+def testTag():
+    string = '<input type="submit" id="su" value="百度一下" class="bg s_btn">'
+    pattern = re.compile(r'<input type="submit" id="(.*?)" value="(.*?)" class="bg s_btn">')
+    result = pattern.findall(string)
+    print(result)
+
+
 if __name__ == '__main__':
-    run()
+    # run()
+    testTag()
+    pass

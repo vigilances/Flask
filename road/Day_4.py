@@ -61,6 +61,22 @@ def test4():
         print(i)
 
 
+"""
+ Cookie和Session
+          
+            Cookie 	                                                Session
+
+储存位置 	客户端                                                 	服务器端
+目的 	    跟踪会话，也可以保存用户偏好设置或者保存用户名密码等 	跟踪会话
+安全性 	    不安全 	                                                安全
+
+"""
+
+
+def test5():
+    pass
+
+
 if __name__ == '__main__':
     # test()
     # test1()

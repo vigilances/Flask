@@ -14,7 +14,8 @@ def fun():
     print(L)
     M = (x * x for x in range(10))
     for x in M:
-        print(x)
+        # print(x)
+        print(M.__next__())
     pass
 
 
@@ -34,7 +35,7 @@ def print_three_things(a, b, c):
 
 if __name__ == '__main__':
     # test()
-    # fun()
+    fun()
     # print_everything('apple', 'banana', 'cabbage')
     # table_things(apple='fruit', cabbage='vegetable')
     # print_three_things(*['faq', 'idiot', 'virgin'])
